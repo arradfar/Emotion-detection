@@ -14,10 +14,6 @@ This project aims to classify the emotion on a person's face into one of **seven
 The repository is currently compatible with `tensorflow-2.0` and makes use of the Keras API using the `tensorflow.keras` library.
 
 * First, clone the repository and enter the folder
-I did these steps:
-1. fork project to my github repository
-2. download dataset and copy it to src folder
-3. open repository locally in Atom editor
 
 
 ```bash
@@ -26,6 +22,16 @@ cd Emotion-detection
 ```
 
 * Download the FER-2013 dataset from [here](https://drive.google.com/file/d/1X60B-uR3NtqPd4oosdotpbDgy8KOfUdr/view?usp=sharing) and unzip it inside the `src` folder. This will create the folder `data`.
+I did these steps:
+1. fork project to my github repository
+2. download dataset and copy it to src folder
+3. open repository locally in Atom editor
+#create a virtual environment in conda command prompt
+conda create --name [a name] python=3.7
+pip install cmake
+pip install numpy
+pip install opencv-contrib-python==4.1.2.30
+pip install tensorflow==2.1.0
 
 * If you want to train this model, use:  
 
