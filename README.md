@@ -14,6 +14,11 @@ This project aims to classify the emotion on a person's face into one of **seven
 The repository is currently compatible with `tensorflow-2.0` and makes use of the Keras API using the `tensorflow.keras` library.
 
 * First, clone the repository and enter the folder
+I did these steps:
+1. fork project to my github repository
+2. download dataset and copy it to src folder
+3. open repository locally in Atom editor
+
 
 ```bash
 git clone https://github.com/atulapra/Emotion-detection.git
