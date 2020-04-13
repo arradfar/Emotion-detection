@@ -32,7 +32,8 @@ pip install cmake
 pip install numpy
 pip install opencv-contrib-python==4.1.2.30
 pip install tensorflow==2.1.0
-
+# d:\1.study\testfolder\python\e_detect1\emotion-detection\src
+#activate ocv5
 * If you want to train this model, use:  
 
 ```bash
