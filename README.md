@@ -27,7 +27,7 @@ I did these steps:
 2. download dataset and copy it to src folder
 3. open repository locally in Atom editor
 #create a virtual environment in conda command prompt
-conda create --name [a name] python=3.7
+conda create --name [a name = ocv5] python=3.7
 pip install cmake
 pip install numpy
 pip install opencv-contrib-python==4.1.2.30
