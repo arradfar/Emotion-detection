@@ -34,6 +34,9 @@ pip install opencv-contrib-python==4.1.2.30
 pip install tensorflow==2.1.0
 # d:\1.study\testfolder\python\e_detect1\emotion-detection\src
 #activate ocv5
+python emotions.py --mode display
+press 1 then q to terminate the video capture!
+
 * If you want to train this model, use:  
 
 ```bash
