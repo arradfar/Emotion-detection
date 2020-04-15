@@ -9,6 +9,22 @@ This project aims to classify the emotion on a person's face into one of **seven
 * Python 3, [OpenCV](https://opencv.org/), [Tensorflow](https://www.tensorflow.org/)
 * To install the required packages, run `pip install -r requirements.txt`.
 
+I did these steps:
+1. fork project to my GitHub repository.
+2. download dataset and model.h5(trained) and copy them to 'src' folder.
+3. Clone repository locally and open it in Atom editor.
+4. create a virtual environment in conda command prompt:
+  conda create --name [a name = ocv6here] python=3.7
+  my root: cd 1.study\testfolder\python\e_detect1\emotion-detection\src
+5. in conda prompt run: activate ocv6
+6. install requirements to virtual environment:
+  pip install cmake
+  pip install numpy
+  pip install opencv-contrib-python==4.1.2.30
+  pip install tensorflow==2.1.0
+7. run :python emotions.py --mode display
+8. press e to terminate the video capture!
+
 ## Basic Usage
 
 The repository is currently compatible with `tensorflow-2.0` and makes use of the Keras API using the `tensorflow.keras` library.
@@ -22,20 +38,7 @@ cd Emotion-detection
 ```
 
 * Download the FER-2013 dataset from [here](https://drive.google.com/file/d/1X60B-uR3NtqPd4oosdotpbDgy8KOfUdr/view?usp=sharing) and unzip it inside the `src` folder. This will create the folder `data`.
-I did these steps:
-1. fork project to my github repository
-2. download dataset and copy it to src folder
-3. open repository locally in Atom editor
-#create a virtual environment in conda command prompt
-conda create --name [a name = ocv5] python=3.7
-pip install cmake
-pip install numpy
-pip install opencv-contrib-python==4.1.2.30
-pip install tensorflow==2.1.0
-# d:\1.study\testfolder\python\e_detect1\emotion-detection\src
-#activate ocv5
-python emotions.py --mode display
-press 1 then q to terminate the video capture!
+
 
 * If you want to train this model, use:  
 
