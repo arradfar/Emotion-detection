@@ -14,16 +14,16 @@ I did these steps:
 2. download dataset and model.h5(trained) and copy them to 'src' folder.
 3. Clone repository locally and open it in Atom editor.
 4. create a virtual environment in conda command prompt:
-  conda create --name [a name = ocv6here] python=3.7
+  conda create --name [a name = ocv5here] python=3.7
   my root: cd 1.study\testfolder\python\e_detect1\emotion-detection\src
-5. in conda prompt run: activate ocv6
+5. in conda prompt run: activate ocv5
 6. install requirements to virtual environment:
   pip install cmake
   pip install numpy
   pip install opencv-contrib-python==4.1.2.30
   pip install tensorflow==2.1.0
-7. run :python emotions.py --mode display
-8. press e to terminate the video capture!
+7. run : python emotions.py --mode display
+8. press 'e' to terminate the video capture!
 
 ## Basic Usage
 
