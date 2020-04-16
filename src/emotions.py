@@ -105,7 +105,7 @@ elif mode == "display":
     cv2.ocl.setUseOpenCL(False)
 
     # dictionary which assigns each label an emotion (alphabetical order)
-    emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "HAPPY", 4: "Neutral", 5: "Sad", 6: "Surprised"}
+    emotion_dict = {0: "ANGRY", 1: "Disgusted", 2: "FEARFUL", 3: "HAPPY", 4: "Neutral", 5: "SAD", 6: "Surprised"}
 
     # start the webcam feed
     cap = cv2.VideoCapture(0)
@@ -125,7 +125,7 @@ elif mode == "display":
             prediction = model.predict(cropped_img)
             maxindex = int(np.argmax(prediction))
             cv2.putText(frame, emotion_dict[maxindex], (x+20, y-60), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
-
+            #cv2.delay(1000)
         cv2.imshow('AtoA Emotion Test', cv2.resize(frame,(1600 // 2,960 // 2),interpolation = cv2.INTER_CUBIC))
         if cv2.waitKey(1) & 0xFF == ord('e'):
             break
