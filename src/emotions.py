@@ -127,7 +127,7 @@ elif mode == "display":
             cv2.putText(frame, emotion_dict[maxindex], (x+20, y-60), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
             #cv2.delay(1000)
         cv2.imshow('AtoA Emotion Test', cv2.resize(frame,(1600 // 2,960 // 2),interpolation = cv2.INTER_CUBIC))
-        if cv2.waitKey(1) & 0xFF == ord('e'):
+        if cv2.waitKey(25) & 0xFF == ord('e'):
             break
 
     cap.release()
